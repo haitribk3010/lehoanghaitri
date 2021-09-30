@@ -1,0 +1,331 @@
+<head>
+    <script src="https://kit.fontawesome.com/f600b0cc5d.js" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    
+
+
+</head>
+
+<body>
+    <!-- menu start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand nav-logo" href="index.html">kalles</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active hover-blue" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-blue" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-blue" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown hover-blue">
+                        <a class="nav-link dropdown-toggle hover-blue" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Jeans</a></li>
+                            <li><a class="dropdown-item" href="#">Denim</a></li>
+                            <li><a class="dropdown-item" href="#">Clothes</a></li>
+                            <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown hover-blue">
+                        <a class="nav-link dropdown-toggle hover-blue" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Product
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">For Women</a></li>
+                            <li><a class="dropdown-item" href="#">For Men</a></li>
+                            <li><a class="dropdown-item" href="#">For Kids</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle hover-blue" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sales
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Sales off 50%</a></li>
+                            <li><a class="dropdown-item" href="#">Voucher</a></li>
+                            <li><a class="dropdown-item" href="#">Give away</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="icon-items">
+                <a href="cart.html"><img src="images/menu.png" width="20px" height="20px"></a>
+                <a href="cart.html"><img src="images/user.png" width="20px" height="20px"></a>
+                <a href="cart.html"><img src="images/shopping-cart.png" width="20px" height="20px"></a>
+                <a href="cart.html"><img src="images/heart-shape.png" width="20px" height="20px"></a>
+                <a href="cart.html"><img src="images/cart.png" width="20px" height="20px"></a>
+            </div>
+        </div>
+    </nav>
+    <div class="added-cart">
+        <a href="cart.html">
+            <p>Added to cart: <span>0</span></p>
+        </a>
+    </div>
+
+    <!-- menu end -->
+    <div class="cart-area">
+        <div class="container" style="display: flex; justify-content: center;">
+            <div class="myrow">
+                <div class="cart-header">
+                    <div class="col-5">PRODUCT</div>
+                    <div class="col-3">PRICE</div>
+                    <div class="col-2">QUANTITY</div>
+                    <div class="col-1">TOTAL</div>
+                    <div class="col-1">REMOVE</div>
+                </div>
+                <hr>
+            </div>
+
+        </div>
+        <div class="cart-section">
+            <div class="container" style="display: flex; justify-content: center;">
+                <div class="myrow cart-items">
+                    <div class="cart-info">
+                        <div class="col-5 product-info" style="display: flex;">
+                            <div class="product-img">
+                                <img src="images/anhshop1back.jpeg" alt="">
+                            </div>
+                            <div class="product-title">
+                                Ten san pham
+                            </div>
+                        </div>
+                        <div class="col-3 product-price">
+                            <div class="price-item">
+                                30.00
+                            </div>
+                        </div>
+                        <div class="col-2 quantity-product">
+                            <div class="quantity-choose">
+                                <!-- <button id="minus-btn" class="btn btn-decrease">-</button> -->
+                                <input id="input-number" type="number" class="quantity-input" value="1">
+                                <!-- <button id="plus-btn" class="btn btn-increase ">+</button> -->
+
+                            </div>
+                        </div>
+                        <div class="col-1 total-price-item">
+                            <div class="total-price">
+                                30.00
+                            </div>
+                        </div>
+                        <div class="col-1 remove">
+                            <div class="remove-icon">
+                                <button class="btn-dangerous">
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-info">
+                        <div class="col-5 product-info" style="display: flex;">
+                            <div class="product-img">
+                                <img src="images/anhshop1back.jpeg" alt="">
+                            </div>
+                            <div class="product-title">
+                                Ten san pham
+                            </div>
+                        </div>
+                        <div class="col-3 product-price">
+                            <div class="price-item">
+                                30.00
+                            </div>
+                        </div>
+                        <div class="col-2 quantity-product">
+                            <div class="quantity-choose">
+                                <!-- <button id="minus-btn" class="btn btn-decrease">-</button> -->
+                                <input id="input-number" type="number" class="quantity-input" value="1">
+                                <!-- <button id="plus-btn" class="btn btn-increase ">+</button> -->
+
+                            </div>
+                        </div>
+                        <div class="col-1 total-price-item">
+                            <div class="total-price">
+                                30.00
+                            </div>
+                        </div>
+                        <div class="col-1 remove">
+                            <div class="remove-icon">
+                                <button class="btn-dangerous">
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <hr>
+            </div>
+        </div>
+
+    
+
+
+
+    </div>
+
+
+
+
+
+    <!-- ----------Footer-------- -->
+
+    <div class="footer" style="background-color: #f6f6f8;">
+        <div class="container">
+            <div class="small-container" style="padding-top: 30px;">
+                <div class="row" style="padding:0 auto; width: 100%;">
+                    <div class="col-5 col-sm-6 col-12" style="width: 20%; display: block;">
+                        <a href="index.html"><img src="images/kalles.svg" width="125px" height="30px"></a>
+                        <div class="location" style="display: flex; margin-top: 20px;">
+                            <a href=""><i style="font-size: 30px;" class="fas fa-map-marker-alt"></i></a>
+                            <p style="margin-left: 20px;">
+                                <span style="font-size: 14px;">184 Main Rd E, St Albans
+                                    VIC 3021, Australia</span>
+                            </p>
+                        </div>
+                        <div class="location" style="display: flex; margin-top: 20px;">
+                            <a href=""><i style="font-size: 25px;" class="fas fa-envelope"></i></a>
+                            <p style="margin-left: 20px;">
+                                <span style="font-size: 14px;">contact@company.com</span>
+                            </p>
+                        </div>
+                        <div class="location" style="display: flex; margin-top: 20px;">
+                            <a href=""><i style="font-size: 20px;" class="fas fa-phone-alt"></i></a>
+                            <p style="margin-left: 20px;">
+                                <span style="font-size: 14px;">+001 2233 456</span>
+                            </p>
+                        </div>
+                        <div class="nui-icon" style="display: flex; margin-top: 25px;">
+                            <a href=""><i style="font-size: 18px; margin: 0 14px;" class="fab fa-facebook-f"></i></a>
+                            <a href=""><i style="font-size: 18px; margin: 0 14px;" class="fab fa-twitter"></i></a>
+                            <a href=""><i style="font-size: 18px; margin: 0 14px;" class="fab fa-instagram"></i></a>
+                            <a href=""><i style="font-size: 18px; margin: 0 14px;" class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i style="font-size: 18px; margin: 0 14px;" class="fab fa-pinterest-p"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="col-5 col-sm-6 col-12 categories"
+                        style=" width: 18%; display: flex; justify-content: center;">
+                        <div style="display: block;">
+                            <p style="font-size: 16px; font-weight: 500; color: #000; margin-bottom: 10px;">Information
+                            </p>
+                            <ul>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="">Terms & Conditions</a></li>
+                                <li><a href="">Returns & Exchanges</a></li>
+                                <li><a href="">Shipping & Delivery</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-5 col-sm-6 col-12 categories"
+                        style="width:18%; display: flex; justify-content: center;">
+                        <div style="display: block;">
+                            <p style="font-size: 16px; font-weight: 500; color: #000; margin-bottom: 10px;">Categories
+                            </p>
+                            <ul>
+                                <li><a href="">Men</a></li>
+                                <li><a href="">Women</a></li>
+                                <li><a href="">Accessories</a></li>
+                                <li><a href="">Shoes</a></li>
+                                <li><a href="">Denim</a></li>
+                                <li><a href="">Dress</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-5 col-sm-6 col-12 categories"
+                        style="width: 18%;display: flex; justify-content: center;">
+                        <div style="display: block;">
+                            <p style="font-size: 16px; font-weight: 500; color: #000; margin-bottom: 10px;">Useful links
+                            </p>
+                            <ul>
+                                <li><a href="">Store Location</a></li>
+                                <li><a href="">Latest News</a></li>
+                                <li><a href="">My Account</a></li>
+                                <li><a href="">Size Guide</a></li>
+                                <li><a href="">FAQs 2</a></li>
+                                <li><a href="">FAQs</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col-5 col-sm-6 col-12" style="width: 22%; height: 215px;">
+                        <p style="font-size: 16px; font-weight: 500; color: #000; margin-bottom: 30px;">Newsletter
+                            Signup</p>
+                        <p style="font-size: 14px; margin-bottom: 20px;">Subscribe to our newsletter and get 10% off
+                            your first purchase</p>
+                        <div class="sign-up-box">
+                            <input type="text" placeholder="Your email is....">
+                            <a class="subscribe" href="">Subscribe</a>
+                        </div>
+                        <img style="transform: scale(0.9); margin-top: 10px;" src="images/creditcard.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------copyright-------- -->
+    <div class="container">
+        <div class="row" style="padding: 10px 0;">
+            <div class="col-md-6 col-sm-6 col-12  cpr1">
+                <span style="font-size: 14px;">Copyright © 2021 Kalles all rights reserved. Powered by haitri</span>
+
+            </div>
+            <div class="col-md-6 col-sm-6 col-12 cpr2" style="display: flex; justify-content: flex-end;">
+                <a href="">
+                    <li>Shop</li>
+                </a>
+                <a href="">
+                    <li>About Us</li>
+                </a>
+                <a href="">
+                    <li>Contact</li>
+                </a>
+                <a href="">
+                    <li>Blog</li>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <script src="deleteitem.js"></script>
+
+</body>
+
+
+</html>

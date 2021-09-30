@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/f600b0cc5d.js" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <!-- menu start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand nav-logo">kalles</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active hover-blue" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-blue">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-blue">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown hover-blue">
+                        <a class="nav-link dropdown-toggle hover-blue" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item">Jeans</a></li>
+                            <li><a class="dropdown-item">Denim</a></li>
+                            <li><a class="dropdown-item">Clothes</a></li>
+                            <li><a class="dropdown-item">T-Shirts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown hover-blue">
+                        <a class="nav-link dropdown-toggle hover-blue" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Product
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item">For Women</a></li>
+                            <li><a class="dropdown-item">For Men</a></li>
+                            <li><a class="dropdown-item">For Kids</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle hover-blue" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Sales
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item">Sales off 50%</a></li>
+                            <li><a class="dropdown-item">Voucher</a></li>
+                            <li><a class="dropdown-item">Give away</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="icon-items">
+                <a href="cart.html"><img src="images/menu.png" width="20px" height="20px"></a>
+                <a href="cart.html"><img src="images/user.png" width="20px" height="20px"></a>
+                <a href="#mycart"><img src="images/shopping-cart.png" width="20px" height="20px"></a>
+                <a href="cart.html"><img src="images/heart-shape.png" width="20px" height="20px"></a>
+                <a href="cart.html"><img src="images/cart.png" width="20px" height="20px"></a>
+            </div>
+        </div>
+    </nav>
+    <div class="added-cart">
+        <a href="cart.html">
+            <p>Added to cart: <span>0</span></p>
+        </a>
+    </div>
+
+    <!-- menu end -->
+
+    <!-- slide start -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/hinhslide1.jpeg" class="d-block w-100" alt="...">
+                <div class="slide-title">
+                    <p style="color: black; font-size: 16px; font-weight: 700; margin-bottom: 0;">SUMMER SALE</p>
+                    <p style="font-size: 40px; font-weight: 700;">Save up to 70%</p>
+                    <a class="btn btn-info btn-custom">Expore Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/hinhslide2.jpeg" class="d-block w-100" alt="...">
+                <div class="slide-title">
+                    <p style="color: black; font-size: 16px; font-weight: 700; margin-bottom: 0;">SUMMER SALE</p>
+                    <p style="font-size: 40px; font-weight: 700;">Save up to 70%</p>
+                    <a class="btn btn-info btn-custom">Expore Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/hinhslide3.jpeg" class="d-block w-100" alt="...">
+                <div class="slide-title slide-title-right">
+                    <p style="color: black; font-size: 16px; font-weight: 700; margin-bottom: 0;">SUMMER SALE</p>
+                    <p style="font-size: 40px; font-weight: 700;">Save up to 70%</p>
+                    <a class="btn btn-info btn-custom">Expore Now</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- slide end -->
+
+    <!-- ----banner---- -->
+
+    <div class="banner">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="img-col-6 img-trans">
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 flex-column">
+                    <div class="column1">
+                        <div class="column1-img img-trans">
+                        </div>
+                    </div>
+                    <div class="column2">
+                        <div class="column2-img img-trans">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="watch img-trans"></div>
+                </div>
+            </div>
+        </div>
+        <!-- product -->
+        <div style="margin-top: 70px;" class="small-container">
+            <div class="big-title">
+                <h2 class="title">TRENDING</h2>
+                <p class="top-view" style="font-family: 'Libre Baskerville'; font-style: italic;">Top view in this week
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="shop-photo">
+                        <div class="wishlist-icon ">
+                            <a><i style="font-size: 20px;" class="fa fa-heart-o appear" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div style="background-image: url(images/anhshop1front.jpeg);"
+                            class="background-img img-trans destinated">
+                            <a class="shop-img-hover"><img src="images/anhshop1back.jpeg" alt=""></a>
+                        </div>
+                        <div class="btn-hover-shop appear">
+                            <div class="nutbam">
+                                <a class="btn view-btn view-product" href="product.html" >
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick View</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 20px; text-align: center;" class="fa fa-eye"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nutbam">
+                                <a class="btn view-btn add-to-cart">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick Shop</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 19px; text-align: center;" class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- <div class="">
+                          <a class="btn shop-btn" >Quick Shop</a>
+                      </div> -->
+                        </div>
+                        <div class="choose-size">
+                            <p class="appear">XS, S, M, L, XL</p>
+                        </div>
+                    </div>
+                    <h4 class="shop-item">Analogue Resin Strap</h4>
+
+                    <p class="price">$36.00</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="shop-photo">
+                        <div class="wishlist-icon ">
+                            <a><i style="font-size: 20px;" class="fa fa-heart-o appear" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div style="background-image: url(images/anhshop3front.jpeg);"
+                            class="background-img img-trans destinated">
+                            <a class="shop-img-hover"><img src="images/anhshop3back.jpeg" alt=""></a>
+                        </div>
+                        <div class="btn-hover-shop appear">
+                            <div class="nutbam">
+                                <a class="btn view-btn view-product" href="product.html">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick View</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 20px; text-align: center;" class="fa fa-eye"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nutbam">
+                                <a class="btn view-btn add-to-cart">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick Shop</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 19px; text-align: center;" class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- <div class="">
+                          <a class="btn shop-btn" >Quick Shop</a>
+                      </div> -->
+                        </div>
+                        <div class="choose-size">
+                            <p class="appear">XS, S, M, L, XL</p>
+                        </div>
+                    </div>
+                    <h4 class="shop-item">Blush Beanie</h4>
+
+                    <p class="price">$20.00</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="shop-photo">
+                        <div class="wishlist-icon ">
+                            <a><i style="font-size: 20px;" class="fa fa-heart-o appear" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div style="background-image: url(images/anhshop2front.jpeg);"
+                            class="background-img img-trans destinated">
+                            <a class="shop-img-hover"><img src="images/anhshop2back.jpeg" alt=""></a>
+                        </div>
+                        <div class="btn-hover-shop appear">
+                            <div class="nutbam">
+                                <a class="btn view-btn view-product" href="product.html">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick View</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 20px; text-align: center;" class="fa fa-eye"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nutbam">
+                                <a class="btn view-btn add-to-cart">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick Shop</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 19px; text-align: center;" class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- <div class="">
+                          <a class="btn shop-btn" >Quick Shop</a>
+                      </div> -->
+                        </div>
+                        <div class="choose-size">
+                            <p class="appear">XS, S, M, L, XL</p>
+                        </div>
+                    </div>
+                    <h4 class="shop-item">Ridley High Waist</h4>
+
+                    <p class="price">$21.00</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="shop-photo">
+                        <div class="wishlist-icon ">
+                            <a><i style="font-size: 20px;" class="fa fa-heart-o appear" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div style="background-image: url(images/anhshop4front.jpeg);"
+                            class="background-img img-trans destinated">
+                            <a class="shop-img-hover"><img src="images/anhshop4back.jpeg" alt=""></a>
+                        </div>
+                        <div class="btn-hover-shop appear">
+                            <div class="nutbam">
+                                <a class="btn view-btn view-product" href="product.html">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick View</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 20px; text-align: center;" class="fa fa-eye"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nutbam">
+                                <a class="btn view-btn add-to-cart">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick Shop</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 19px; text-align: center;" class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- <div class="">
+                          <a class="btn shop-btn" >Quick Shop</a>
+                      </div> -->
+                        </div>
+                        <div class="choose-size">
+                            <p class="appear">XS, S, M, L, XL</p>
+                        </div>
+                    </div>
+                    <h4 class="shop-item">Cluse La Boheme Rose Gold</h4>
+
+                    <p class="price">$22.00</p>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="shop-photo">
+                        <div class="wishlist-icon ">
+                            <a><i style="font-size: 20px;" class="fa fa-heart-o appear" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div style="background-image: url(images/anhshop5front.jpeg);"
+                            class="background-img img-trans destinated">
+                            <a class="shop-img-hover"><img src="images/anhshop5back.jpeg" alt=""></a>
+                        </div>
+                        <div class="btn-hover-shop appear">
+                            <div class="nutbam">
+                                <a class="btn view-btn view-product" href="product.html">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick View</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 20px; text-align: center;" class="fa fa-eye"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nutbam">
+                                <a class="btn view-btn add-to-cart">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick Shop</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 19px; text-align: center;" class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- <div class="">
+                          <a class="btn shop-btn" >Quick Shop</a>
+                      </div> -->
+                        </div>
+                        <div class="choose-size">
+                            <p class="appear">XS, S, M, L, XL</p>
+                        </div>
+                    </div>
+                    <h4 class="shop-item">Mercury Tee</h4>
+
+                    <p class="price">$23.00</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="shop-photo">
+                        <div class="wishlist-icon ">
+                            <a><i style="font-size: 20px;" class="fa fa-heart-o appear" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div style="background-image: url(images/anhshop6front.jpeg);"
+                            class="background-img img-trans destinated">
+                            <a class="shop-img-hover"><img src="images/anhshop6back.jpeg" alt=""></a>
+                        </div>
+                        <div class="btn-hover-shop appear">
+                            <div class="nutbam">
+                                <a class="btn view-btn view-product" href="product.html">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick View</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 20px; text-align: center;" class="fa fa-eye"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nutbam">
+                                <a class="btn view-btn add-to-cart">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick Shop</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 19px; text-align: center;" class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- <div class="">
+                          <a class="btn shop-btn" >Quick Shop</a>
+                      </div> -->
+                        </div>
+                        <div class="choose-size">
+                            <p class="appear">XS, S, M, L, XL</p>
+                        </div>
+                    </div>
+                    <h4 class="shop-item">La Bohème Rose Gold</h4>
+
+                    <p class="price">$24.00</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="shop-photo">
+                        <div class="wishlist-icon ">
+                            <a><i style="font-size: 20px;" class="fa fa-heart-o appear" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div style="background-image: url(images/anhshop7front.jpeg);"
+                            class="background-img img-trans destinated">
+                            <a class="shop-img-hover"><img src="images/anhshop7back.jpeg" alt=""></a>
+                        </div>
+                        <div class="btn-hover-shop appear">
+                            <div class="nutbam">
+                                <a class="btn view-btn view-product" href="product.html">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick View</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 20px; text-align: center;" class="fa fa-eye"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nutbam">
+                                <a class="btn view-btn add-to-cart">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick Shop</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 19px; text-align: center;" class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- <div class="">
+                          <a class="btn shop-btn" >Quick Shop</a>
+                      </div> -->
+                        </div>
+                        <div class="choose-size">
+                            <p class="appear">XS, S, M, L, XL</p>
+                        </div>
+                    </div>
+                    <h4 class="shop-item">Analogue Resin Strap</h4>
+
+                    <p class="price">$25.00</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="shop-photo">
+                        <div class="wishlist-icon ">
+                            <a><i style="font-size: 20px;" class="fa fa-heart-o appear" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div style="background-image: url(images/anhshop8front.png);"
+                            class="background-img img-trans destinated">
+                            <a class="shop-img-hover"><img src="images/anhshop8back.png" alt=""></a>
+                        </div>
+                        <div class="btn-hover-shop appear">
+                            <div class="nutbam">
+                                <a class="btn view-btn view-product" href="product.html">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick View</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 20px; text-align: center;" class="fa fa-eye"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nutbam">
+                                <a class="btn view-btn add-to-cart">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick Shop</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 19px; text-align: center;" class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- <div class="">
+                          <a class="btn shop-btn" >Quick Shop</a>
+                      </div> -->
+                        </div>
+                        <div class="choose-size">
+                            <p class="appear">XS, S, M, L, XL</p>
+                        </div>
+                    </div>
+                    <h4 class="shop-item">Black Mountain Hat</h4>
+
+                    <p class="price">$26.00</p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- lookbook -->
+        <div class="lookbook">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-12 col-lookbook">
+                        <div style="background-image: url(images/lookbook.jpeg);" class="img-lookbok-col-2 img-trans">
+                        </div>
+                        <div class="lookbook-p">
+                            <p style="font-size: 26px;">LOOKBOOK 2021</p>
+                            <p style="font-size: 14px;">MAKE LOVE THIS LOOK</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-12 col-lookbook">
+                        <div style="background-image: url(images/summersale.jpeg);" class="img-lookbok-col-2 img-trans">
+                        </div>
+                        <div class="lookbook-p">
+                            <p style="font-size: 15px;">SUMMER SALE</p>
+                            <p style="font-size: 42px;">UP TO 70%</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <!-- -------------------best seller------------------- -->
+        <div style="margin-top: 50px;" class="small-container">
+            <div class="big-title">
+                <h2 class="title">BEST SALE</h2>
+                <p class="top-view" style="font-family: 'Libre Baskerville'; font-style: italic;">Top sales in this week
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="shop-photo">
+                        <div class="wishlist-icon ">
+                            <a><i style="font-size: 20px;" class="fa fa-heart-o appear" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div style="background-image: url(images/anhshop9front.jpeg);"
+                            class="background-img img-trans destinated">
+                            <a class="shop-img-hover"><img src="images/anhshop9back.jpeg" alt=""></a>
+                        </div>
+                        <div class="btn-hover-shop appear">
+                            <div class="nutbam">
+                                <a class="btn view-btn view-product" href="product.html">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick View</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 20px; text-align: center;" class="fa fa-eye"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nutbam">
+                                <a class="btn view-btn add-to-cart">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick Shop</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 19px; text-align: center;" class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- <div class="">
+                          <a class="btn shop-btn" >Quick Shop</a>
+                      </div> -->
+                        </div>
+                        <div class="choose-size">
+                            <p class="appear">XS, S, M, L, XL</p>
+                        </div>
+                    </div>
+                    <h4 class="shop-item">City Backpack Black</h4>
+
+                    <p class="price">$27.00</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="shop-photo">
+                        <div class="wishlist-icon ">
+                            <a><i style="font-size: 20px;" class="fa fa-heart-o appear" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div style="background-image: url(images/anhshop10front.jpeg);"
+                            class="background-img img-trans destinated">
+                            <a class="shop-img-hover"><img src="images/anhshop10back.jpeg" alt=""></a>
+                        </div>
+                        <div class="btn-hover-shop appear">
+                            <div class="nutbam">
+                                <a class="btn view-btn view-product" href="product.html">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick View</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 20px; text-align: center;" class="fa fa-eye"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nutbam">
+                                <a class="btn view-btn add-to-cart">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick Shop</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 19px; text-align: center;" class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- <div class="">
+                          <a class="btn shop-btn" >Quick Shop</a>
+                      </div> -->
+                        </div>
+                        <div class="choose-size">
+                            <p class="appear">XS, S, M, L, XL</p>
+                        </div>
+                    </div>
+                    <h4 class="shop-item">Women Black Pants</h4>
+
+                    <p class="price">$28.00</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="shop-photo">
+                        <div class="wishlist-icon ">
+                            <a><i style="font-size: 20px;" class="fa fa-heart-o appear" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div style="background-image: url(images/anhshop11front.jpeg);"
+                            class="background-img img-trans destinated">
+                            <a class="shop-img-hover"><img src="images/anhshop11back.jpeg" alt=""></a>
+                        </div>
+                        <div class="btn-hover-shop appear">
+                            <div class="nutbam">
+                                <a class="btn view-btn view-product" href="product.html">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick View</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 20px; text-align: center;" class="fa fa-eye"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nutbam">
+                                <a class="btn view-btn add-to-cart">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick Shop</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 19px; text-align: center;" class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- <div class="">
+                          <a class="btn shop-btn" >Quick Shop</a>
+                      </div> -->
+                        </div>
+                        <div class="choose-size">
+                            <p class="appear">XS, S, M, L, XL</p>
+                        </div>
+                    </div>
+                    <h4 class="shop-item">Mercury Tee</h4>
+
+                    <p class="price">$29.00</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="shop-photo">
+                        <div class="wishlist-icon ">
+                            <a><i style="font-size: 20px;" class="fa fa-heart-o appear" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div style="background-image: url(images/anhshop12front.jpeg);"
+                            class="background-img img-trans destinated">
+                            <a class="shop-img-hover"><img src="images/anhshop12back.jpeg" alt=""></a>
+                        </div>
+                        <div class="btn-hover-shop appear">
+                            <div class="nutbam">
+                                <a class="btn view-btn view-product" href="product.html">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick View</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 20px; text-align: center;" class="fa fa-eye"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nutbam">
+                                <a class="btn view-btn add-to-cart">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick Shop</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 19px; text-align: center;" class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- <div class="">
+                          <a class="btn shop-btn" >Quick Shop</a>
+                      </div> -->
+                        </div>
+                        <div class="choose-size">
+                            <p class="appear">XS, S, M, L, XL</p>
+                        </div>
+                    </div>
+                    <h4 class="shop-item">Men Pants</h4>
+
+                    <p class="price">$31.00</p>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="shop-photo">
+                        <div class="wishlist-icon ">
+                            <a><i style="font-size: 20px;" class="fa fa-heart-o appear" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div style="background-image: url(images/anhshop13front.jpeg);"
+                            class="background-img img-trans destinated">
+                            <a class="shop-img-hover"><img src="images/anhshop13back.jpeg" alt=""></a>
+                        </div>
+                        <div class="btn-hover-shop appear">
+                            <div class="nutbam">
+                                <a class="btn view-btn view-product" href="product.html">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick View</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 20px; text-align: center;" class="fa fa-eye"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nutbam">
+                                <a class="btn view-btn add-to-cart">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick Shop</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 19px; text-align: center;" class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- <div class="">
+                          <a class="btn shop-btn" >Quick Shop</a>
+                      </div> -->
+                        </div>
+                        <div class="choose-size">
+                            <p class="appear">XS, S, M, L, XL</p>
+                        </div>
+                    </div>
+                    <h4 class="shop-item">Short Sleeved Hoodie</h4>
+
+                    <p class="price">$32.00</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="shop-photo">
+                        <div class="wishlist-icon ">
+                            <a><i style="font-size: 20px;" class="fa fa-heart-o appear" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div style="background-image: url(images/anhshop14front.jpeg);"
+                            class="background-img img-trans destinated">
+                            <a class="shop-img-hover"><img src="images/anhshop14back.jpeg" alt=""></a>
+                        </div>
+                        <div class="btn-hover-shop appear">
+                            <div class="nutbam">
+                                <a class="btn view-btn view-product" href="product.html">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick View</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 20px; text-align: center;" class="fa fa-eye"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nutbam">
+                                <a class="btn view-btn add-to-cart">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick Shop</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 19px; text-align: center;" class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- <div class="">
+                          <a class="btn shop-btn" >Quick Shop</a>
+                      </div> -->
+                        </div>
+                        <div class="choose-size">
+                            <p class="appear">XS, S, M, L, XL</p>
+                        </div>
+                    </div>
+                    <h4 class="shop-item">Sweatshirt In Geometric Print</h4>
+
+                    <p class="price">$33.00</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="shop-photo">
+                        <div class="wishlist-icon ">
+                            <a><i style="font-size: 20px;" class="fa fa-heart-o appear" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div style="background-image: url(images/anhshop15front.jpeg);"
+                            class="background-img img-trans destinated">
+                            <a class="shop-img-hover"><img src="images/anhshop15back.jpeg" alt=""></a>
+                        </div>
+                        <div class="btn-hover-shop appear">
+                            <div class="nutbam">
+                                <a class="btn view-btn view-product" href="product.html">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick View</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 20px; text-align: center;" class="fa fa-eye"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nutbam">
+                                <a class="btn view-btn add-to-cart">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick Shop</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 19px; text-align: center;" class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- <div class="">
+                          <a class="btn shop-btn" >Quick Shop</a>
+                      </div> -->
+                        </div>
+                        <div class="choose-size">
+                            <p class="appear">XS, S, M, L, XL</p>
+                        </div>
+                    </div>
+                    <h4 class="shop-item">Dusk Pom Beanie</h4>
+
+                    <p class="price">$34.00</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="shop-photo">
+                        <div class="wishlist-icon ">
+                            <a><i style="font-size: 20px;" class="fa fa-heart-o appear" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div style="background-image: url(images/anhshop16front.jpeg);"
+                            class="background-img img-trans destinated">
+                            <a class="shop-img-hover"><img src="images/anhshop16back.jpeg" alt=""></a>
+                        </div>
+                        <div class="btn-hover-shop appear">
+                            <div class="nutbam">
+                                <a class="btn view-btn view-product" href="product.html">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick View</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 20px; text-align: center;" class="fa fa-eye"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nutbam">
+                                <a class="btn view-btn add-to-cart">
+                                    <div class="hover-content-btn">
+                                        <div>
+                                            <p class="btn-p">Quick Shop</p>
+                                        </div>
+                                        <br>
+                                        <div class="eye-icon">
+                                            <i style="font-size: 19px; text-align: center;" class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- <div class="">
+                          <a class="btn shop-btn" >Quick Shop</a>
+                      </div> -->
+                        </div>
+                        <div class="choose-size">
+                            <p class="appear">XS, S, M, L, XL</p>
+                        </div>
+                    </div>
+                    <h4 class="shop-item">Circle Snapback Cap</h4>
+
+                    <p class="price">$35.00</p>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- -------cart area ------->
+
+        <!-- -----------Testimonials------ -->
+        <div class="testimonials">
+            <div class="small-container">
+                <div class="big-title">
+                    <h2 class="title blog">BLOG</h2>
+                    <p class="top-view" style="font-family: 'Libre Baskerville'; font-style: italic;">Top view in this
+                        week
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-12 col-tes">
+                        <div class="frame-for-bgr">
+                            <div style="background-image: url(images/feedback1.jpeg);" class="feedback img-trans">
+                            </div>
+                        </div>
+                        <div class="feedback-post">
+                            <h4>Spring – Summer Trending 2020</h4>
+                            <p>By <span style="color: black;">admin</span> on <span style="color: black;">April 6,
+                                    2020</span></p>
+                            <p>Typography is the work of typesetters, compositors, typographers, graphic designers, art
+                                directors, manga artists, ...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-12 col-tes">
+                        <div class="frame-for-bgr">
+                            <div style="background-image: url(images/feedback2.jpeg);" class="feedback img-trans">
+                            </div>
+                        </div>
+                        <div class="feedback-post">
+                            <h4>Spring – Summer Trending 2020</h4>
+                            <p>By <span style="color: black;">admin</span> on <span style="color: black;">April 6,
+                                    2020</span></p>
+                            <p>Typography is the work of typesetters, compositors, typographers, graphic designers, art
+                                directors, manga artists, ...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-12 col-tes">
+                        <div class="frame-for-bgr">
+                            <div style="background-image: url(images/feedback3.jpeg);" class="feedback img-trans">
+                            </div>
+                        </div>
+                        <div class="feedback-post">
+                            <h4>Spring – Summer Trending 2020</h4>
+                            <p>By adminon April 6, 2020</p>
+                            <p>Typography is the work of typesetters, compositors, typographers, graphic designers, art
+                                directors, manga artists, ...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- instagram-- -->
+        <div class="container">
+            <div class="row nonflex">
+                <div class="big-title">
+                    <h2 class="title blog">MEDIA</h2>
+                    <p class="top-view" style="font-family: 'Libre Baskerville'; font-style: italic;">Top view in this
+                        week
+                    </p>
+                </div>
+                <div class="insta-imges">
+                    <div class="frame-sm-img">
+                        <div style="background-image: url(images/ins1.jpeg);" class="bgr-sm img-trans">
+                        </div>
+                    </div>
+                    <div class="frame-sm-img">
+                        <div style="background-image: url(images/ins2.jpeg);" class="bgr-sm img-trans">
+                        </div>
+                    </div>
+                    <div class="frame-sm-img">
+                        <div style="background-image: url(images/ins3.jpeg);" class="bgr-sm img-trans">
+                        </div>
+                    </div>
+                    <div class="frame-sm-img">
+                        <div style="background-image: url(images/ins4.jpeg);" class="bgr-sm img-trans">
+                        </div>
+                    </div>
+                    <div class="frame-sm-img">
+                        <div style="background-image: url(images/ins5.jpeg);" class="bgr-sm img-trans">
+                        </div>
+                    </div>
+                    <div class="frame-sm-img">
+                        <div style="background-image: url(images/ins6.jpeg);" class="bgr-sm img-trans">
+                        </div>
+                    </div>
+
+
+                </div>
+                <div style="margin-top: 40px;" class="ad-word">
+                    <div class="small-container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 col-12 flex-ad">
+                                <div class="logo-ad">
+                                    <a><i style="font-size: 30px;" class="fas fa-car"></i></a>
+                                </div>
+                                <div class="ad-p" style="margin-left: 20px;">
+                                    <p style="font-size: 14px; font-weight: 600; color: black;">FREE SHIPPING</p>
+                                    <p style="font-size: 14px;">Free shipping on all US order or order above $100</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12 flex-ad">
+                                <div class="logo-ad">
+                                    <a><i style="font-size: 30px;" class="fas fa-phone-alt"></i></a>
+                                </div>
+                                <div class="ad-p" style="margin-left: 20px;">
+                                    <p style="font-size: 14px; font-weight: 600; color: black;">SUPPORT 24/7</p>
+                                    <p style="font-size: 14px;">Contact us 24 hours a day, 7 days a week</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12 flex-ad">
+                                <div class="logo-ad">
+                                    <a><i style="font-size: 30px;" class="fas fa-undo-alt"></i></a>
+                                </div>
+                                <div class="ad-p" style="margin-left: 20px;">
+                                    <p style="font-size: 14px; font-weight: 600; color: black;">30 DAYS RETURN</p>
+                                    <p style="font-size: 14px;">Simply return it within 30 days for an exchange.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12 flex-ad">
+                                <div class="logo-ad">
+                                    <a><i style="font-size: 30px;" class="fas fa-shield-alt"></i></a>
+                                </div>
+                                <div class="ad-p" style="margin-left: 20px;">
+                                    <p style="font-size: 14px; font-weight: 600; color: black;">100% PAYMENT SECURE</p>
+                                    <p style="font-size: 14px;">We ensure secure payment with PEV</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- ----------Footer-------- -->
+
+        <div class="footer" style="background-color: #f6f6f8;">
+            <div class="container">
+                <div class="small-container" style="padding-top: 30px;">
+                    <div class="row" style="padding:0 auto; width: 100%;">
+                        <div class="col-5 col-sm-6 col-12" style="width: 20%; display: block;">
+                            <a href="index.html"><img src="images/kalles.svg" width="125px" height="30px"></a>
+                            <div class="location" style="display: flex; margin-top: 20px;">
+                                <a><i style="font-size: 30px;" class="fas fa-map-marker-alt"></i></a>
+                                <p style="margin-left: 20px;">
+                                    <span style="font-size: 14px;">184 Main Rd E, St Albans
+                                        VIC 3021, Australia</span>
+                                </p>
+                            </div>
+                            <div class="location" style="display: flex; margin-top: 20px;">
+                                <a><i style="font-size: 25px;" class="fas fa-envelope"></i></a>
+                                <p style="margin-left: 20px;">
+                                    <span style="font-size: 14px;">contact@company.com</span>
+                                </p>
+                            </div>
+                            <div class="location" style="display: flex; margin-top: 20px;">
+                                <a><i style="font-size: 20px;" class="fas fa-phone-alt"></i></a>
+                                <p style="margin-left: 20px;">
+                                    <span style="font-size: 14px;">+001 2233 456</span>
+                                </p>
+                            </div>
+                            <div class="nui-icon" style="display: flex; margin-top: 25px;">
+                                <a><i style="font-size: 18px; margin: 0 14px;" class="fab fa-facebook-f"></i></a>
+                                <a><i style="font-size: 18px; margin: 0 14px;" class="fab fa-twitter"></i></a>
+                                <a><i style="font-size: 18px; margin: 0 14px;" class="fab fa-instagram"></i></a>
+                                <a><i style="font-size: 18px; margin: 0 14px;" class="fab fa-linkedin-in"></i></a>
+                                <a><i style="font-size: 18px; margin: 0 14px;" class="fab fa-pinterest-p"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="col-5 col-sm-6 col-12 categories"
+                            style=" width: 18%; display: flex; justify-content: center;">
+                            <div style="display: block;">
+                                <p style="font-size: 16px; font-weight: 500; color: #000; margin-bottom: 10px;">
+                                    Information
+                                </p>
+                                <ul>
+                                    <li><a>About Us</a></li>
+                                    <li><a>Contact Us</a></li>
+                                    <li><a>Terms & Conditions</a></li>
+                                    <li><a>Returns & Exchanges</a></li>
+                                    <li><a>Shipping & Delivery</a></li>
+                                    <li><a>Privacy Policy</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-5 col-sm-6 col-12 categories"
+                            style="width:18%; display: flex; justify-content: center;">
+                            <div style="display: block;">
+                                <p style="font-size: 16px; font-weight: 500; color: #000; margin-bottom: 10px;">
+                                    Categories
+                                </p>
+                                <ul>
+                                    <li><a>Men</a></li>
+                                    <li><a>Women</a></li>
+                                    <li><a>Accessories</a></li>
+                                    <li><a>Shoes</a></li>
+                                    <li><a>Denim</a></li>
+                                    <li><a>Dress</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-5 col-sm-6 col-12 categories"
+                            style="width: 18%;display: flex; justify-content: center;">
+                            <div style="display: block;">
+                                <p style="font-size: 16px; font-weight: 500; color: #000; margin-bottom: 10px;">Useful
+                                    links
+                                </p>
+                                <ul>
+                                    <li><a>Store Location</a></li>
+                                    <li><a>Latest News</a></li>
+                                    <li><a>My Account</a></li>
+                                    <li><a>Size Guide</a></li>
+                                    <li><a>FAQs 2</a></li>
+                                    <li><a>FAQs</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="col-5 col-sm-6 col-12" style="width: 22%; height: 215px;">
+                            <p style="font-size: 16px; font-weight: 500; color: #000; margin-bottom: 30px;">Newsletter
+                                Signup</p>
+                            <p style="font-size: 14px; margin-bottom: 20px;">Subscribe to our newsletter and get 10% off
+                                your first purchase</p>
+                            <div class="sign-up-box">
+                                <input type="text" placeholder="Your email is....">
+                                <a class="subscribe">Subscribe</a>
+                            </div>
+                            <img style="transform: scale(0.9); margin-top: 10px;" src="images/creditcard.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------copyright-------- -->
+        <div class="container">
+            <div class="row" style="padding: 10px 0;">
+                <div class="col-md-6 col-sm-6 col-12  cpr1">
+                    <span style="font-size: 14px;">Copyright © 2021 Kalles all rights reserved. Powered by haitri</span>
+
+                </div>
+                <div class="col-md-6 col-sm-6 col-12 cpr2" style="display: flex; justify-content: flex-end;">
+                    <a>
+                        <li>Shop</li>
+                    </a>
+                    <a>
+                        <li>About Us</li>
+                    </a>
+                    <a>
+                        <li>Contact</li>
+                    </a>
+                    <a>
+                        <li>Blog</li>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <!-- ----JS for Toggle Menu---- -->
+
+
+
+        <div id="posts-block"></div>
+
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="deleteitem.js"></script>
+        <script src="view.js"></script>
+
+        
+
+</body>
+
+
+
+
+
+</html>
